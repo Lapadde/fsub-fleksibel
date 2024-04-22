@@ -19,7 +19,7 @@ async def start_button(client):
     for key in FORCE_SUB_.keys():
         chat_id = FORCE_SUB_[key]
         button_name = (await client.get_chat(chat_id)).title
-        current_row.append(InlineKeyboardButton(text=f"JOIN {key}", url=getattr(client, f'invitelink{key}')))
+        current_row.append(InlineKeyboardButton(text=f"ᴊᴏɪɴ {key}", url=getattr(client, f'invitelink{key}')))
         if len(current_row) == BUTTON_ROW:
             dynamic_button.append(current_row)
             current_row = []

