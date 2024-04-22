@@ -6,7 +6,7 @@ from hydrogram.types import InlineKeyboardButton
 async def start_button(client):
     if not FORCE_SUB_:
         buttons = [
-            [InlineKeyboardButton("ᴊᴀsᴀ ᴘᴇᴍʙᴜᴀᴛᴀɴ ʙᴏᴛ ✓", url=f"https://t.me/baksdudee")]
+            [InlineKeyboardButton("ᴊᴀsᴀ ᴘᴇᴍʙᴜᴀᴛᴀɴ ʙᴏᴛ ✓", url=f"https://t.me/baksdudee")],
             [
                 InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="help"),
                 InlineKeyboardButton(text="〤 ᴛᴜᴛᴜᴘ 〤", callback_data="close"),
@@ -44,7 +44,7 @@ async def fsub_button(client, message):
         for key in FORCE_SUB_.keys():
             chat_id = FORCE_SUB_[key]
             button_name = (await client.get_chat(chat_id)).title
-            current_row.append(InlineKeyboardButton(text=f"JOIN {key}", url=getattr(client, f'invitelink{key}')))
+            current_row.append(InlineKeyboardButton(text=f"ᴊᴏɪɴ {key}", url=getattr(client, f'invitelink{key}')))
             if len(current_row) == BUTTON_ROW:
                 dynamic_button.append(current_row)
                 current_row = []
