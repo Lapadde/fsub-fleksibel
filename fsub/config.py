@@ -34,7 +34,7 @@ FORCE_MESSAGE = getenv(
     "FORCE_MESSAGE",
     "Halo {mention}!"
     "\n"
-    "Anda harus bergabung di Channel/Group terlebih dahulu untuk melihat file yang saya bagikan. Silakan Join Ke Channel/Group terlebih dahulu."
+    "Anda harus bergabung di Channel/Group terlebih dahulu untuk melihat file yang saya bagikan. Silakan Join Ke Channel/Group yang ada di bawah terlebih dahulu."
     "\n\n"
     "Jasa Deploy BOT ➭ @baksdudee.",
 )

@@ -162,7 +162,7 @@ async def not_joined(client: Bot, message: Message):
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
     msg = await client.send_message(message.chat.id, "Tunggu Sebentar...")
-    await msg.edit(f"{len(full_userbase())} Pengguna Bot")
+    await msg.edit(f"{len(full_userbase())} Total Pengguna Bot")
 
 
 
@@ -175,7 +175,7 @@ async def send_text(client: Bot, message: Message):
         unsuccessful = 0
 
         please_wait = await message.reply(
-            "Mengirim pesan siaran..."
+            "Mengirim pesan siaran... Tunggu Sebentar"
         )
         for chat_id in full_userbase():
             try:
@@ -200,7 +200,7 @@ Gagal: {unsuccessful}
         return await please_wait.edit(status)
     else:
         msg = await message.reply(
-            "Balas ke pesan!"
+            "Balas ke pesan yang ingin di broadcast dengan mengetik /broadcast!"
         )
         await msg.delete()
 
