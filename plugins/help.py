@@ -1,8 +1,8 @@
 from fsub import Bot
 
-from hydrogram import filters
-from hydrogram.types import CallbackQuery, InlineKeyboardMarkup, Message
-from hydrogram.types import InlineKeyboardButton
+from pyrogram import filters
+from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, Message
+from pyrogram.types import InlineKeyboardButton
 
 
 class Data:
@@ -79,3 +79,4 @@ async def handler(client: Bot, query: CallbackQuery):
             await query.message.reply_to_message.delete()
         except Exception:
             pass
+        

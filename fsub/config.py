@@ -28,15 +28,13 @@ START_MESSAGE = getenv(
     "START_MESSAGE",
     "Halo {mention}!"
     "\n\n"
-    "Saya dapat menyimpan file pribadi di Channel tertentu dan pengguna lain dapat mengaksesnya dari link khusus.\n\nJasa Deploy BOT ➭ @baksdudee",
+    "Saya dapat menyimpan file pribadi di Channel tertentu dan pengguna lain dapat mengaksesnya dari link khusus.",
 )
 FORCE_MESSAGE = getenv(
     "FORCE_MESSAGE",
     "Halo {mention}!"
     "\n"
-    "Anda harus bergabung di Channel/Group terlebih dahulu untuk melihat file yang saya bagikan. Silakan Join Ke Channel/Group yang ada di bawah terlebih dahulu."
-    "\n\n"
-    "Jasa Deploy BOT ➭ @baksdudee.",
+    "Anda harus bergabung di Channel/Group terlebih dahulu untuk melihat file yang saya bagikan. Silakan Join Ke Channel/Group yang ada di bawah terlebih dahulu.",
 )
 
 ADMINS = [int(x) for x in (getenv("ADMINS").split())]
@@ -47,6 +45,6 @@ DISABLE_BUTTON = getenv("DISABLE_BUTTON", False)
 
 
 basicConfig(level=INFO, format="[%(levelname)s] - %(message)s")
-getLogger("hydrogram").setLevel(WARNING)
+getLogger("pyrogram").setLevel(WARNING)
 def LOGGER(name: str) -> Logger:
     return getLogger(name)

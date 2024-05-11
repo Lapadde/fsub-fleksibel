@@ -1,6 +1,6 @@
 import sys
 
-from hydrogram import Client
+from pyrogram import Client
 
 from fsub.config import (
     CHANNEL_DB,

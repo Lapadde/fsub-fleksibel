@@ -1,5 +1,5 @@
-from hydrogram import filters
-from hydrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+from pyrogram import filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from fsub import Bot
 from fsub.config import ADMINS

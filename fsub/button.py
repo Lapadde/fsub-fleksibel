@@ -1,12 +1,12 @@
 from fsub.config import FORCE_SUB_, BUTTON_ROW
 
-from hydrogram.types import InlineKeyboardButton
+from pyrogram.types import InlineKeyboardButton
 
 
 async def start_button(client):
     if not FORCE_SUB_:
         buttons = [
-            [InlineKeyboardButton("ᴊᴀsᴀ ᴘᴇᴍʙᴜᴀᴛᴀɴ ʙᴏᴛ ✓", url=f"https://t.me/baksdudee")],
+            [InlineKeyboardButton("ᴏʀᴅᴇʀ ᴠɪᴘ ✓", url=f"https://t.me/estelerkuu")],
             [
                 InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="help"),
                 InlineKeyboardButton(text="〤 ᴛᴜᴛᴜᴘ 〤", callback_data="close"),

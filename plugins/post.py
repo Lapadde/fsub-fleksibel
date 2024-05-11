@@ -1,8 +1,8 @@
 import asyncio
 
-from hydrogram import Client, filters
-from hydrogram.errors import FloodWait
-from hydrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+from pyrogram import Client, filters
+from pyrogram.errors import FloodWait
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from fsub import Bot
 from fsub.config import ADMINS, CHANNEL_DB, DISABLE_BUTTON, LOGGER
@@ -95,3 +95,4 @@ async def new_post(client: Client, message: Message):
         await message.edit_reply_markup(reply_markup)
     except Exception:
         pass
+    
